@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxMinApp", "MaxMinApp\MaxMinApp.csproj", "{75ECBA11-206B-4037-8F40-FEFA4ECA6EC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EFB4C7EE-2307-4012-8242-A47B07894C43} = {EFB4C7EE-2307-4012-8242-A47B07894C43}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxMinApp.Tests1", "MaxMinApp.Tests1\MaxMinApp.Tests1.csproj", "{EFB4C7EE-2307-4012-8242-A47B07894C43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75ECBA11-206B-4037-8F40-FEFA4ECA6EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75ECBA11-206B-4037-8F40-FEFA4ECA6EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75ECBA11-206B-4037-8F40-FEFA4ECA6EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75ECBA11-206B-4037-8F40-FEFA4ECA6EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB4C7EE-2307-4012-8242-A47B07894C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB4C7EE-2307-4012-8242-A47B07894C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB4C7EE-2307-4012-8242-A47B07894C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB4C7EE-2307-4012-8242-A47B07894C43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D32E6CC-9767-42DD-B8E7-BC414B8B9CB7}
+	EndGlobalSection
+EndGlobal

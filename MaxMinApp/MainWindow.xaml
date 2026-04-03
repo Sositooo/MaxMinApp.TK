@@ -1,0 +1,63 @@
+﻿<Window x:Class="MaxMinApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вычисление максимума или минимума"
+        Height="260" Width="460"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen">
+
+    <!-- Основной контейнер с серым фоном в стиле Windows Classic -->
+    <Grid Background="#D4D0C8" Margin="10">
+
+        <!-- ===== ПОЛЯ ВВОДА ЧИСЕЛ ===== -->
+
+        <!-- Метка и поле для первого числа -->
+        <Label Content="Число 1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,15,0,0"/>
+        <TextBox x:Name="txtNum1" HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Width="160" Height="22" Margin="80,18,0,0"/>
+
+        <!-- Метка и поле для второго числа -->
+        <Label Content="Число 2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <TextBox x:Name="txtNum2" HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Width="160" Height="22" Margin="80,53,0,0"/>
+
+        <!-- Метка и поле для третьего числа -->
+        <Label Content="Число 3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,85,0,0"/>
+        <TextBox x:Name="txtNum3" HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Width="160" Height="22" Margin="80,88,0,0"/>
+
+        <!-- ===== ПОЛЕ ВЫВОДА РЕЗУЛЬТАТА ===== -->
+
+        <!-- Метка "Результат =" и поле только для чтения -->
+        <Label Content="Результат =" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,160,0,0"/>
+        <TextBox x:Name="txtResult"
+                 HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Width="160" Height="22" Margin="90,163,0,0"
+                 IsReadOnly="True"
+                 Background="#E8E8E8"/>
+
+        <!-- ===== БЛОК ВЫБОРА ОПЕРАЦИИ ===== -->
+
+        <!-- Рамка с переключателями максимум / минимум -->
+        <Border BorderBrush="Gray" BorderThickness="1"
+                HorizontalAlignment="Right" VerticalAlignment="Top"
+                Width="150" Height="100" Margin="0,10,10,0"
+                Background="#C8C8C8">
+            <StackPanel VerticalAlignment="Center" Margin="20,0,0,0">
+                <!-- Переключатель: найти максимум (выбран по умолчанию) -->
+                <RadioButton x:Name="rbMax" Content="максимум" IsChecked="True" Margin="0,8,0,8"/>
+                <!-- Переключатель: найти минимум -->
+                <RadioButton x:Name="rbMin" Content="минимум"/>
+            </StackPanel>
+        </Border>
+
+        <!-- ===== КНОПКА ВЫЧИСЛЕНИЯ ===== -->
+
+        <!-- Кнопка запускает обработчик btnVychislit_Click в code-behind -->
+        <Button Content="Вычислить"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Width="100" Height="26" Margin="0,0,10,5"
+                Click="btnVychislit_Click"/>
+
+    </Grid>
+</Window>
